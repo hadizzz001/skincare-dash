@@ -114,4 +114,6 @@ model Hotoffer {
 model Banner {
   id  String   @id @default(auto()) @map("_id") @db.ObjectId
   img String[] 
+  title        String?
+  sub        String?
 }
