@@ -18,6 +18,7 @@ export async function POST(req) {
       type, 
       sub,
       factory, 
+      sale
     } = body;
 
     console.log("body are: ", body);
@@ -38,6 +39,7 @@ export async function POST(req) {
         type, 
         sub,
         factory, 
+        sale
       },
     });
 

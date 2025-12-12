@@ -24,7 +24,7 @@ export default function AddProduct() {
   const [colorOptions, setColorOptions] = useState([]);
 const [sizeOptions, setSizeOptions] = useState([]);
 const [colorSizeData, setColorSizeData] = useState({});
-
+const [sale, setSale] = useState(false);
 
   // NEW STATES 
   const [selectedColors, setSelectedColors] = useState([]);
@@ -111,7 +111,7 @@ const handleColorToggle = (colorId) => {
       sub: selectedsubCategory,
       factory: selectedFactory,
       type: productType,
-
+sale: sale ? "yes" : "no",
       ...(productType === "single" && { stock }),
 
 ...(productType === "collection" && {
@@ -338,6 +338,15 @@ const handleColorToggle = (colorId) => {
 
       <label className="font-bold">Description</label>
       <ReactQuill value={description} onChange={setDescription} className="mb-6" />
+
+        <label className="flex items-center gap-2 cursor-pointer">
+    <input
+      type="checkbox"
+      checked={sale}
+      onChange={(e) => setSale(e.target.checked)}
+    />
+    <span>Sale</span>
+  </label>
 
       <Upload onFilesUpload={handleImgChange} /> Max 12 images
 

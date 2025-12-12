@@ -9,7 +9,7 @@ export async function PATCH(req) {
     const { username, password } = await req.json();
 
     await prisma.user.update({
-      where: { id: "690a3cd97e9ec99cd4826509" }, // ✅ force update only this record
+      where: { id: "6939d344d8cda9359d4edf0d" }, // ✅ force update only this record
       data: {
         username,
         password: password ? await hash(password, 10) : undefined,

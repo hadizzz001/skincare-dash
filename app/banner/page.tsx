@@ -8,7 +8,7 @@ const ManageCategory = () => {
   const [message, setMessage] = useState('');
 
   // Fixed ID
-  const bannerId = '68fcd8b821e83092245e1485';
+  const bannerId = '693b2a2acea03fcc38d25d85';
 
   // Fetch current banner to show
   const [banner, setBanner] = useState(null);

@@ -80,9 +80,19 @@ export default function Sidebar() {
                 Notification
               </a>
             </li>  */}
-            <li>
+            {/* <li>
               <a href="/off" style={{ color: "white", textDecoration: "none" }}>
                 Hot Offers
+              </a>
+            </li> */}
+            <li>
+              <a href="/banner" style={{ color: "white", textDecoration: "none" }}>
+                Banner
+              </a>
+            </li>
+            <li>
+              <a href="/txt" style={{ color: "white", textDecoration: "none" }}>
+                Special day text
               </a>
             </li>
             <li>
